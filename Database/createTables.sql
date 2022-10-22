@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS artists (
     FOREIGN KEY(genres) REFERENCES musical_genre(id)
 );
 
-CREATE TABLE IF NOT EXISTS nationality (
+CREATE TABLE IF NOT EXISTS nationality(
     id INT AUTO_INCREMENT NOT NULL,
     country VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
