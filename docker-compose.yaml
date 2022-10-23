@@ -1,0 +1,13 @@
+version: "3"
+services :
+  db:
+    container_name: studyDB
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 3306:3306
+
+
+networks:
+  default:
+    name: studyDB
